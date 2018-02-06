@@ -24,7 +24,7 @@ def two_sum(nums , target)
     fail ("Array size must be greater than two or equal to two")
   end
 
-  if target.is_a?(Integer) ==false
+  if target.is_a?(Integer) == false
     fail("Target Number must be an Integer")
   end
 

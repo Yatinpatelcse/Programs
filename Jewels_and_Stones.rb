@@ -17,11 +17,11 @@
 # The characters in J are distinct.
 
 def jewels_And_Stone( j , s)
-  if j.nil?
+  if j.nil? || j == ''
     fail "Jewels String is Empty"
   end
 
-  if s.nil?
+  if s.nil? || s == ''
     fail "Stone String is Empty"
   end
 

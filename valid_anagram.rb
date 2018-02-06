@@ -16,12 +16,12 @@
 # ### No Reference
 #
 def valid_anagram(s, t)
-  if s.length == nil
+  if s.nil? || s == ''
     fail("s: Enter the String")
   end
 
 
-  if t.length == nil
+  if t.nil? || t == ''
     fail("t: Enter the String")
   end
 

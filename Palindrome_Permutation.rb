@@ -7,7 +7,7 @@
 
 def is_palindrome(str)
 
-  if str.nil?
+  if str.nil? || str == ''
     fail("String is Empty\n")
   end
 
