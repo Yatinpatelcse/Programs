@@ -6,11 +6,6 @@
 ## No Reference
 
 def is_palindrome(str)
-
-  if str.nil? || str == ''
-    fail("String is Empty\n")
-  end
-
   hash_table = {}
   (0..str.length - 1).each do |i|
     if hash_table[str[i]]
@@ -25,7 +20,3 @@ def is_palindrome(str)
     return true
   end
 end
-
-str = "carerac"
-result = is_palindrome(str)
-print result

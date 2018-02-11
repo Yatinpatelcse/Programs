@@ -16,15 +16,7 @@
 # S and J will consist of letters and have length at most 50.
 # The characters in J are distinct.
 
-def jewels_And_Stone( j , s)
-  if j.nil? || j == ''
-    fail "Jewels String is Empty"
-  end
-
-  if s.nil? || s == ''
-    fail "Stone String is Empty"
-  end
-
+def num_jewels_in_stones(j, s)
   hash_table = {}
   (0..s.length-1).each do |i|
     if hash_table.include? s[i]
@@ -48,9 +40,3 @@ def jewels_And_Stone( j , s)
 
   return count
 end
-
-j = 'r'
-s = 'aAAbbbb'
-result = jewels_And_Stone(j,s)
-print result
-
