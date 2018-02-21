@@ -25,8 +25,8 @@ class MinStack
     fail UnderflowError if @min_stacks.empty?
     @min_stacks.min
   end
-end
 
+end
 
 obj = MinStack.new()
 obj.push(6)
